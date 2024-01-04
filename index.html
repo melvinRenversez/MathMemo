@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>MathMemo</title>
+</head>
+<body>
+
+    <div class="menu-content" id="menu-content">
+        <div class="calcul-time">
+            <span>temps d'affichage</span>
+            <select id="time">
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">10</option>
+                <option value="1">20</option>
+            </select>
+        </div>
+        <div class="nb-calcul">
+            <span>nombre de valcul</span>
+            <select name="" id="nombre-calcul-select" value="3">
+            </select>
+        </div>
+        <div class="max-value">
+            <span>valeur maximal</span>
+            <select name="" id="valeur-max-select"  value="5">
+            </select>
+        </div>
+    </div>
+
+    <div class="content ">
+        <div class="menu" id="menu">
+            <i class='bx bx-menu icon activeIcon' id="M"></i>
+            <i class='bx bx-x icon' id="X"></i>
+        </div>
+        <header>
+            <h1>MathMemo</h1>
+            <button id="generer">Generer</button>
+        </header>
+        <section>
+            <div class="num" id="text">Click sur génerer</div>
+            <input type="text" placeholder="Réponse" id="reponse">
+        </section>
+        <footer>
+            <button id="send">Répondre</button>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
